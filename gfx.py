@@ -196,6 +196,12 @@ class GFX:
         dy02 = y2 - y0
         dx12 = x2 - x1
         dy12 = y2 - y1
+        if dy01 == 0:
+            dy01 = 1
+        if dy02 == 0:
+            dy02 = 1
+        if dy12 == 0:
+            dy12 = 1
         sa = 0
         sb = 0
         if y1 == y2:
